@@ -35,7 +35,7 @@ app.set('view engine','handlebars');
 });*/
 
 app.get('/home', function(req, res) {
-	res.render('home', {
+	res.send('home', {
 		title: 'PROFILE INFORMATION',
 imageurl1:'/2x2 final.jpg',
 imageurl2:'/mee.jpg',
