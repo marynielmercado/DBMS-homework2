@@ -30,9 +30,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.engine('handlebars',exphbs ({defaultlayout:'main'}));
 app.set('view engine','handlebars');
 
-app.get('/', function(req, res) {
+/*app.get('/', function(req, res) {
 	res.send('Hello Express!!!');
-});
+});*/
 
 app.get('/home', function(req, res) {
 	res.render('home', {
